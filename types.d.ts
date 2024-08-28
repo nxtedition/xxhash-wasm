@@ -7,6 +7,7 @@ export type XXHashAPI = {
   h32(input: string, seed?: number): number;
   h32ToString(input: string, seed?: number): string;
   h32Raw(inputBuffer: Uint8Array, seed?: number): number;
+  h32Buffer(inputBuffer: NodeJS.Buffer, seed?: number): number;
   create32(seed?: number): XXHash<number>;
   h64(input: string, seed?: bigint): bigint;
   h64ToString(input: string, seed?: bigint): string;
