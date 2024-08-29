@@ -12,6 +12,7 @@ export type XXHashAPI = {
   h64(input: string, seed?: bigint): bigint;
   h64ToString(input: string, seed?: bigint): string;
   h64Raw(inputBuffer: Uint8Array, seed?: bigint): bigint;
+  h64Buffer(inputBuffer: Buffer, seed?: bigint): number;
   create64(seed?: bigint): XXHash<bigint>;
 };
 
